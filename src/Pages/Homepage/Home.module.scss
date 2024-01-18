@@ -1,0 +1,29 @@
+@use "../../assets/styles/mixin" as mixin;
+
+.backgroundTop {
+  background-image: url(../../assets/images/backgroundTopHome.png);
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+
+  @include mixin.xs {
+    height: 20vh;
+  }
+}
+
+.topHome {
+  @include mixin.xs {
+    margin-top: 4rem;
+  }
+}
+
+.headerTitle {
+  margin-left: 20px;
+  padding-top: 3%;
+
+  @include mixin.lg {
+    padding-top: 10%;
+    margin-left: 20%;
+  }
+}
+

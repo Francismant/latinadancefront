@@ -1,0 +1,72 @@
+@use"../../assets/styles/mixin" as mixin;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-grey);
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--colorBox);
+  @include mixin.xs {
+    font-size: 1.8rem;
+  }
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: var(--colorDom);
+  font-weight: 400;
+  margin-bottom: 3%;
+  text-align: center;
+  @include mixin.xs {
+    font-size: 1.5rem;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.center {
+  width: 80%;
+  margin: 0 auto;
+  @include mixin.xs {
+    width: 90%;
+  }
+}
+
+input {
+  font-size: 1.1rem;
+  width: 500px;
+  height: 1.8rem;
+  border-radius: 10px;
+  padding: 1%;
+  border: solid var(--colorFooter) 2px;
+  @include mixin.xs {
+    width: 200px;
+    font-size: 1rem;
+  }
+}
