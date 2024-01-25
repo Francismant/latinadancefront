@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import { userLoader } from "./loaders/userLoader";
+// import { userLoader } from "./loaders/userLoader";
 import {
   ProtectedProfileRoute,
   ProtectedRegisterRoute,
@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
         <App />
       </>
     ),
-    loader: userLoader,
+    // loader: userLoader,
     children: [
       {
         index: true,

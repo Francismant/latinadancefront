@@ -11,20 +11,20 @@ import Planning3 from "../../assets/components/Plannings/Planning3";
 import Planning4 from "../../assets/components/Plannings/Planning4";
 import CarteTarifCouple from "../../assets/components/Cards/CarteTarifCouple";
 import CarteTarifSolo from "../../assets/components/Cards/CarteTarifSolo";
-import { getInfosCours } from "../../apis/infos";
+// import { getInfosCours } from "../../apis/infos";
 import { NavLink } from "react-router-dom";
 
 function Infos() {
-  const [infos, setInfos] = useState([]);
+  // const [infos, setInfos] = useState([]);
 
-  useEffect(() => {
-    async function fetchData() {
-      const infosData = await getInfosCours();
-      setInfos(infosData);
-    }
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const infosData = await getInfosCours();
+  //     setInfos(infosData);
+  //   }
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   return (
     <>
@@ -33,12 +33,12 @@ function Infos() {
           <h1 className="pt3pc ml20">INFOS SUR L'ECOLE DE DANSE</h1>
         </div>
       </section>
-      {infos.length > 0 && (
+      {/* {infos.length > 0 && (
         <div className="warning">
           {" "}
           <h3 className="feedbackWarning center tac mb3pc">{infos[0].text}</h3>
         </div>
-      )}
+      )} */}
       <h2 className="mb3pc">Les professeurs</h2>
       <main className="center df fc gap2">
         <section className="df gap1 fw">
